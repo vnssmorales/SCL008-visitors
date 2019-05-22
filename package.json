@@ -1,0 +1,31 @@
+{
+  "name": "scl008-visitors",
+  "version": "1.0.0",
+  "description": "aplicación para registro de usuarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnssmorales/SCL008-visitors.git"
+  },
+  "author": "Valeska Salinas Karen Reyes Vanessa Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnssmorales/SCL008-visitors/issues"
+  },
+  "homepage": "https://github.com/vnssmorales/SCL008-visitors#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.6.3",
+    "express": "^4.17.0",
+    "gh-pages": "^2.0.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.8.0"
+  }
+}
