@@ -1,18 +1,16 @@
-export const templateRegistry =()=>{
+export const templateRegister =()=>{
 
-    const containerRegistry = document.createElement('div');
+    const containerRegister = document.createElement('div');
 
-    const contenRegistry = `<main>
-    <!-- contenedor para poner foto -->
+    const contenRegister = `<main>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="../src/assets/img/icon-Ewok.png" alt="icon-Ewok" class="rounded-circle">
+                <img src="../img/icon-Ewok.png" alt="icon-Ewok" class="rounded-circle">
             </div>
         </div>
     </div>
-    <!-- fin contendor foto -->
-    <!-- comienzo de input para registro -->
+   
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -28,6 +26,6 @@ export const templateRegistry =()=>{
     </div>
     </main>` 
 
-    containerRegistry.innerHTML=contenRegistry;
-        return containerRegistry;  
+    containerRegister.innerHTML=contenRegister;
+        return containerRegister;  
     }
