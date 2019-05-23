@@ -1,4 +1,5 @@
 import {templateHome} from './assets/views/templateHome.js'
+import {templateRegistry} from './assets/views/templateRegistry'
 
 const changeRouter = (hash) =>{
     if (hash==='#/home'){
@@ -18,7 +19,9 @@ switch(router){
 case 'home':
 containterRoot.appendChild(templateHome());
 break;
-
+case 'registry':
+containterRoot.appendChild(templateRegistry())
+break;
 default:
 containterRoot.innerHTML = `<p>Error 408</p>`
 }
