@@ -9,8 +9,7 @@ export const templateLogin =()=>{
     <p class="error" id="errorNameActive"> </div>
     <div class="input"> <input id="pass" type="password" placeholder="ingresar contraseña">
     <p class="error" id="errorPassActive"></p> </div>
-    <div class="btn-ingresar"> <button class="btn" id="userActive">Ingresar</button> 
-    <div class="btn-recordar"> <button class="btn" id="userremember">Recordar contraseña</button>
+    <div class="btn btn-outline-dark"> <button class="btn" id="userActive">Ingresar</button> 
     </div>
     </div>
     </div>
