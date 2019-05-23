@@ -2,7 +2,7 @@
   "name": "scl008-visitors",
   "version": "1.0.0",
   "description": "aplicación para registro de usuarios",
-  "main": "index.js",
+  "main": "src/assets/views/templateHome.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
