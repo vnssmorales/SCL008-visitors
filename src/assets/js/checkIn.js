@@ -1,4 +1,3 @@
-import {templateRegister} from '../views/templateRegister.js'
 
 export const registration = (name, lastname, mail, identityCell, phone) => {
     firebase.auth().createUserWithEmailAndPassword(mail, identityCell)

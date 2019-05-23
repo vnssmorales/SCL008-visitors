@@ -15,5 +15,22 @@ export const templateLogin =()=>{
     </div>
     `
     containerLogin.innerHTML=contentLogin;
+    const btnUser=containerLogin.querySelector('#userActive');
+    btnUser.addEventListener('click',()=>{
+        let nameActive = document.getElementById('user').value;
+        let passActive = document.getElementById('pass').value;
+        if (nameActive ==="") {
+            document.getElementById('errorNameActive').innerHTML =`Debe ingresar un email ya registrado`
+        }
+        if (passActive ==="") {
+            document.getElementById('errorPassActive').innerHTML = `Por favor ingrese la contraseña`
+        }
+        if (validateUserActive(nameActive,passActive)) {
+            userActive(nameActive,passActive);
+            window.location.hash='#/wall';
+        }   
+         
+     })
+
     return containerLogin;
 } 
