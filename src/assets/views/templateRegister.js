@@ -20,15 +20,15 @@ export const templateRegister =()=>{
                     <input type="text" id="nombre" placeholder="Nombre" class="form-control">
                     <input type="text" id="apellido" placeholder="Apellido" class="form-control">
                     <div class="col-sm-6 col-md-8 col-lg-12">
-                    <h3>Ingresa tu cedula de identidad</h3>
+                    <h5>Ingresa tu cedula de identidad</h5>
                         <input type="number" id="rut" placeholder="11.111.111.-1" class="form-control">
                     </div>
                     <div class="col-sm-6 col-md-8 col-lg-12">
-                    <h3>Ingresa tu correo electronico</h3>
+                    <h5>Ingresa tu correo electronico</h5>
                         <input type="mail" id="correo" placeholder="example@lab.com" class="form-control"> 
                     </div>
                     <div class="col-sm-6 col-md-8 col-lg-12">
-                    <h3>Ingresa tu numero de celular</h3>
+                    <h5>Ingresa tu numero de celular</h5>
                         <input type="number" id="fono" placeholder="+56 9123 45 678" class="form-control">
                     </div>
                 </div>
