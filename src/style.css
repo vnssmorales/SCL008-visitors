@@ -2,3 +2,10 @@ body {
     background-color: transparent; 
     background-image:url("img/Template1.png"); 
    }
+   .avatar{
+    background-color: transparent; 
+    background-image:url("img/Template1.png");
+    background-position:center;/*centrar imagen*/
+   background-repeat: no-repeat;/*no repetir imagen*/
+   background-size: cover;/*especifica tamaño de la imagen*/
+   }
