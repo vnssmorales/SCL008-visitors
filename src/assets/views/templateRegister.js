@@ -2,7 +2,7 @@ export const templateRegister =()=>{
 
     const containerRegister = document.createElement('div');
 
-    const contenRegister = `<main>
+    const contenRegister = `<section>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -24,12 +24,13 @@ export const templateRegister =()=>{
                     <input type="mail" id="correo" placeholder="example@lab.com" class="form-control">
                     <input type="number" id="fono" placeholder="+56 9123 45 678" class="form-control">
                 </div>
-                <div >
-                    
+                <div>
+                <button class="btn btn-outline-dark" id="register">Registro de visitas</button>
                 </div>
                 </div>
         </div>
     </div>
+    </section>
    ` 
 
     containerRegister.innerHTML=contenRegister;
