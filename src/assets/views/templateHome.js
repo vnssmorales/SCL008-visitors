@@ -23,11 +23,9 @@ export const templateHome =()=>{
      const btnAdmin=containerHome.querySelector('#admin');
 
      btnRegister.addEventListener('click',()=>{   
-         console.log('register') 
         window.location.hash='#/register'; 
      })
      btnLogin.addEventListener('click',()=>{   
-        console.log('login') 
         window.location.hash='#/login'; 
      })
      btnAdmin.addEventListener('click',()=>{   

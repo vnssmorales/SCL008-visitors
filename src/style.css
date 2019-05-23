@@ -19,7 +19,12 @@ body {
     background-position:center;/*centrar imagen*/
    background-repeat: no-repeat;/*no repetir imagen*/
    background-size: cover;/*especifica tamaño de la imagen*/
+   
    }
+img {
+    width: 200px;
+    height: 200px;
+}
 
 #visitorshome {
     width: auto;
@@ -33,7 +38,8 @@ body {
 .welcome {
     text-align: center;
 }
-#btn-outline-dark {
+
+#btn {
     padding: 30px;
     margin-bottom: 10px;
     margin-top: 40px;

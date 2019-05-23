@@ -58,6 +58,5 @@ console.log(phone);
 registration(name, lastname, mail, identityCell, phone);
 })
 
-        return containerRegister;  
-    };
-    
+    return containerRegister;  
+};
