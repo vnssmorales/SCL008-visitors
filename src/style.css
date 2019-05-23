@@ -1,3 +1,4 @@
-#root {
-    background-image: radial-gradient(red, yellow);
+body {
+    background-color: transparent; 
+    background-image:url("img/Template1.png"); 
    }
