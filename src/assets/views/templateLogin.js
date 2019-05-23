@@ -1,7 +1,7 @@
 export const templateLogin =()=>{
     const containerLogin = document.createElement('div');
     // creamos el contenido del login
-    const contentLogin = ` <main>
+    const contentLogin = `
     <div class="container" id="loginreg">
     <div class="row around-xs">
     <div class="foto col-xs-10 col-sm-8 col-md-8">
@@ -13,7 +13,7 @@ export const templateLogin =()=>{
     </div>
     </div>
     </div>
-    </main>`
+    `
     containerLogin.innerHTML=contentLogin;
     return containerLogin;
 } 
