@@ -18,13 +18,13 @@ export const templateRegister =()=>{
                     <div class="input-group-prepend">
                         <span class="input-group-text">Nombre y Apellido</span>
                     </div>
-                    <input type="text" placeholder="Nombre" class="form-control">
-                    <input type="text" placeholder="Apellido" class="form-control">
-                    <input type="number" placeholder="Cedúla de identidad" class="form-control">
-                    <input type="mail" placeholder="example@lab.com" class="form-control">
-                    <input type="number" placeholder="+56 9123 45 678" class="form-control">
+                    <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                    <input type="text" id="apellido" placeholder="Apellido" class="form-control">
+                    <input type="number" id="rut" placeholder="Cedúla de identidad" class="form-control">
+                    <input type="mail" id="correo" placeholder="example@lab.com" class="form-control">
+                    <input type="number" id="fono" placeholder="+56 9123 45 678" class="form-control">
                 </div>
-                <div id="rut">
+                <div >
                     
                 </div>
                 </div>
@@ -33,5 +33,22 @@ export const templateRegister =()=>{
    ` 
 
     containerRegister.innerHTML=contenRegister;
+// manejo dom para rescatar los valores
+const btn = containerRegister.querySelector('#register')
+btn.addEventListener('click', () => {
+let name = document.getElementById('nombre').value;
+let lastname = document.getElementById('apellido').value;
+let identityCell = document.getElementById('rut').value;
+let mail = document.getElementById('correo').value;
+let phone = document.getElementById('fono').value;
+console.log(name);
+console.log(lastname);
+console.log(mail);
+console.log(identityCell);
+console.log(phone);
+registration(name, lastname, mail, identityCell, phone);
+})
+
         return containerRegister;  
-    }
+    };
+    
