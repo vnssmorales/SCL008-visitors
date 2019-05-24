@@ -8,6 +8,32 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+#drop_zone{
+    border: 2px dashed #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #bbb;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: 230px;
+    color: #000;
+    font-size: 30px;
+    margin-top: 50px;
+   
+}
+#drop_zone h3 {
+   margin-top: 70px;
+}
+
+.thumb {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -15,16 +41,16 @@ body {
     background-image:url("img/Template1.png"); 
     min-height: 100vh;
     background-repeat: no-repeat;
+    
 }
 
-   
-   .avatar{
-    background-color: transparent; 
-    background-image:url("img/Template1.png");
-    background-position:center;/*centrar imagen*/
-   background-repeat: no-repeat;/*no repetir imagen*/
-   background-size: cover;/*especifica tamaño de la imagen*/
-   }
+#photo {
+   text-align: center;
+   border-radius: 2px solid;
+   margin-top: 30px;
+   margin-bottom: 50px;
+
+}
 
 #welcome {
     text-align: center;
@@ -37,7 +63,7 @@ body {
     font-size: 100px;
 }
 
-#register, #login, #admin{
+#register, #login, #admin {
     margin: 30px;
     padding: 20px;
     margin-bottom: 10px;
@@ -47,7 +73,89 @@ body {
     border-radius: 3px solid;
 }
 
-#home, #administrator{
+#home, #administrator #inputname, #btninguser, #sectionenter{
     text-align: center;
 }
 
+#nombre, #apellido, #rut, #correo, #fono {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px; 
+    margin-left: 180px;  
+}
+
+#archivo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#registry, #userActive {
+    margin: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 3px solid;
+    text-align: center;
+    height: 70px;
+}
+
+.form-control {
+    text-align: center;
+    width: 300px;
+    align-content: center;
+    align-items: center;
+}
+
+#btnregistry{
+    margin-left: 210px;
+}
+
+#ingusuario {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+#pass, #user {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border-color: #000;
+    border-radius: 10px;
+    margin-left: 60px; 
+    text-align: center;
+}
+
+#sectionenter h4 {
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+#contact {
+    width: 320px;
+    height: 50px;
+    text-align: center;
+    border-color: #000;
+    border-radius: 10px;
+}
+
+#selector{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#office {
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#mail_control {
+    text-align: center;
+    width: 600px;
+    margin-left: 30px;
+}
