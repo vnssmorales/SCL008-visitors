@@ -8,6 +8,22 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+#drop_zone{
+    border: 2px dashed #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #bbb;
+    width: 200px;
+    height: 200px;
+}
+
+.thumb {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
 
 
 body {
