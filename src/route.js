@@ -1,6 +1,7 @@
 import {templateHome} from './assets/views/templateHome.js'
 import {templateRegister} from './assets/views/templateRegister.js'
 import {templateLogin} from './assets/views/templateLogin.js'
+import {templateVisitor} from './assets/views/templateVisitor.js'
 
 
 const changeRouter = (hash) =>{
@@ -13,6 +14,10 @@ const changeRouter = (hash) =>{
     if (hash==='#/register'){
         return showTemplate(hash);
     }
+    if (hash==='#/visitor'){
+        return showTemplate(hash);
+    }
+    
 }
 const showTemplate = (hash) =>{
 const router=hash.substring(2); //para que saque el # y tome solo login no #login
@@ -28,6 +33,9 @@ containterRoot.appendChild(templateLogin());
 break;
 case 'register':
 containterRoot.appendChild(templateRegister());
+break;
+case 'visitor':
+containterRoot.appendChild(templateVisitor());
 break;
 default:
 containterRoot.innerHTML = `<p>Error 408</p>`

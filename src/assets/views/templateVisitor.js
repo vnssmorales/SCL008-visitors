@@ -30,9 +30,9 @@ export const templateVisitor =()=>{
     containerVisitor.innerHTML=contenVisitor;
 // manejo dom para rescatar los valores
 const selectVisitor = containerVisitor.querySelector('#registry')
-selectVisitor.addEventListener('change', () => {
-
-})
+// selectVisitor.addEventListener('change', () => {
+    
+// })
 
     return containerVisitor;  
 };

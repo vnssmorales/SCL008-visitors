@@ -83,13 +83,8 @@ btnUploadPhoto.addEventListener('click', () => {
     
       document.getElementById('files').addEventListener('change', handleFileSelect, false);
 })
-btnSavePhoto.addEventListener('click', () => {
-    var file = 
-    ref.put(file).then(function(snapshot) {
-  console.log('Uploaded a blob or file!');
 
-})
-})
+
 
 
 

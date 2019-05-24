@@ -32,6 +32,7 @@ export const templateLogin =()=>{
         }
         if (validateUserActive(nameActive,passActive)) {
             userLogin(nameActive,passActive);
+            window.location.hash='#/visitor'; 
         }   
          
      })
