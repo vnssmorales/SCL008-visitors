@@ -1,6 +1,7 @@
 export const templateVisitor =()=>{
     const containerVisitor = document.createElement('div');
     const contenVisitor = `
+    <div class= "container">
     <section id= "sectionenter">
         <h4>CONTACTO DE ENTRADA</h4>
         <input type="text" name="" placeholder="Nombre de la persona que te recibirá" id="contact">
@@ -23,8 +24,7 @@ export const templateVisitor =()=>{
 <div id= "mail_control">
     <input type="mail" placeholder="example@lab.com" class="form-control">
 </div>
-
- 
+</div> 
    ` 
 
     containerVisitor.innerHTML=contenVisitor;
