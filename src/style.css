@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: transparent; 
@@ -24,12 +25,15 @@ body {
     background-position:center;/*centrar imagen*/
    background-repeat: no-repeat;/*no repetir imagen*/
    background-size: cover;/*especifica tamaño de la imagen*/
+   margin-top: 60px;
+   text-align: center;
+   margin-bottom: 100px;
    }
 
 #welcome {
     text-align: center;
     padding: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     margin-top: 210px;
 }
 
@@ -37,17 +41,31 @@ body {
     font-size: 100px;
 }
 
-#register, #login, #admin{
+#register, #login, #admin {
     margin: 30px;
     padding: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
     width: 250px;
     font-size: 30px;
-    border-radius: 2px solid;
+    border-radius: 3px solid;
 }
 
 #home, #administrator{
     text-align: center;
 }
 
+#nombre, #apellido, #rut, #correo, #fono {
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#photo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#inputname, #inputrut {
+    text-align: center;
+}

@@ -7,7 +7,7 @@ export const templateRegister =()=>{
     const contenRegister = `<section class="avatar">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12" id="photo">
                 <img src="../img/icon-Ewok.png" alt="icon-Ewok" class="rounded-circle">
             </div>
         </div>
@@ -15,15 +15,15 @@ export const templateRegister =()=>{
    
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-8 col-lg-12">
+            <div class="col-sm-6 col-md-8 col-lg-12" id ="inputname">
                 <div class="input-group">
                     <input type="text" id="nombre" placeholder="Nombre" class="form-control">
                     <input type="text" id="apellido" placeholder="Apellido" class="form-control">
-                    <div class="col-sm-6 col-md-8 col-lg-12">
+                    <div class="col-sm-6 col-md-8 col-lg-12" id="inputrut">
                     <h5>Ingresa tu cedula de identidad</h5>
                         <input type="number" id="rut" placeholder="11.111.111.-1" class="form-control">
                     </div>
-                    <div class="col-sm-6 col-md-8 col-lg-12">
+                    <div class="col-sm-6 col-md-8 col-lg-12" id= "inputmail">
                     <h5>Ingresa tu correo electronico</h5>
                         <input type="mail" id="correo" placeholder="example@lab.com" class="form-control"> 
                     </div>
