@@ -21,6 +21,7 @@
     color: #000;
     font-size: 30px;
     margin-top: 50px;
+   
 }
 #drop_zone h3 {
    margin-top: 70px;
@@ -72,7 +73,7 @@ body {
     border-radius: 3px solid;
 }
 
-#home, #administrator #inputname{
+#home, #administrator #inputname, #btninguser{
     text-align: center;
 }
 
@@ -80,8 +81,8 @@ body {
     width: 300px;
     padding: 10px;
     margin: 20px;
-   border-radius: 5px; 
-   margin-left: 180px;  
+    border-radius: 5px; 
+    margin-left: 180px;  
 }
 
 #archivo {
@@ -89,7 +90,7 @@ body {
     margin-bottom: 20px;
 }
 
-#registry {
+#registry, #userActive {
     margin: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -107,6 +108,20 @@ body {
     align-items: center;
 }
 
-#btnregistry {
+#btnregistry{
     margin-left: 210px;
+}
+
+#ingusuario {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+#pass, #user {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px; 
+    margin-left: 60px; 
 }
