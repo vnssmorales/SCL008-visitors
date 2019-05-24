@@ -1,4 +1,4 @@
-//function for tddregistry
+//functions for tddregistry
 export const registryEmail = (mail) => {
     //expresión regular que simula el patrón del correo electrónico
     let email = /\S+@\S+\.\S+/;
