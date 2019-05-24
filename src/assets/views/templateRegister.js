@@ -7,6 +7,11 @@ export const templateRegister =()=>{
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12" id="photo">
                 <img src="../img/icon-Ewok.png" alt="icon-Ewok" class="rounded-circle">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="drop_zone">tu photo</div>
+                <input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+                <button class="btn btn-outline-dark" id="photo">subirphoto</button>
             </div>
         </div>
     </div>
@@ -42,6 +47,8 @@ export const templateRegister =()=>{
     containerRegister.innerHTML=contenRegister;
 // manejo dom para rescatar los valores
 const btnSaveRegister = containerRegister.querySelector('#registry')
+const btnUploadPhoto = containerRegister.querySelector('#files')
+const btnSavePhoto = containerRegister.querySelector('#photo')
 btnSaveRegister.addEventListener('click', () => {
 let name = document.getElementById('nombre').value;
 let lastname = document.getElementById('apellido').value;
@@ -51,5 +58,50 @@ let phone = document.getElementById('fono').value;
 registration(identityCell, name, lastname, mail, phone);
 })
 
-    return containerRegister;  
+btnUploadPhoto.addEventListener('click', () => {
+    function handleFileSelect(evt) {
+        var files = evt.target.files; // FileList object
+    
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+    
+          // Only process image files.
+          if (!f.type.match('image.*')) {
+            continue;
+          }
+    
+          var reader = new FileReader();
+    
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            return function(e) {
+              // Render thumbnail.
+              var span = document.getElementById('drop_zone');
+              span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                '" title="', escape(theFile.name), '"/>'].join('');
+              document.getElementById('list').insertBefore(span, null);
+            };
+            
+          })(f);
+          console.log(f)
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(f);
+         
+          
+        }
+      }
+    
+      document.getElementById('files').addEventListener('change', handleFileSelect, false);
+})
+btnSavePhoto.addEventListener('click', () => {
+    var file = 
+    ref.put(file).then(function(snapshot) {
+  console.log('Uploaded a blob or file!');
+
+})
+})
+
+
+
+return containerRegister;  
 };
