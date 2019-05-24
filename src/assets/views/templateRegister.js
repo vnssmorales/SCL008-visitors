@@ -1,9 +1,7 @@
 import {registration} from '../js/checkIn.js'
 
 export const templateRegister =()=>{
-
     const containerRegister = document.createElement('div');
-
     const contenRegister = `<section class="avatar">
     <div class="container">
         <div class="row">
@@ -21,7 +19,7 @@ export const templateRegister =()=>{
                     <input type="text" id="apellido" placeholder="Apellido" class="form-control">
                     <div class="col-sm-6 col-md-8 col-lg-12" id="inputrut">
                     <h5>Ingresa tu cedula de identidad</h5>
-                        <input type="number" id="rut" placeholder="11.111.111.-1" class="form-control">
+                        <input type="text" id="rut" placeholder="rut, sin puntos ni guion" class="form-control">
                     </div>
                     <div class="col-sm-6 col-md-8 col-lg-12" id= "inputmail">
                     <h5>Ingresa tu correo electronico</h5>
@@ -50,12 +48,7 @@ let lastname = document.getElementById('apellido').value;
 let identityCell = document.getElementById('rut').value;
 let mail = document.getElementById('correo').value;
 let phone = document.getElementById('fono').value;
-console.log(name);
-console.log(lastname);
-console.log(mail);
-console.log(identityCell);
-console.log(phone);
-registration(name, lastname, mail, identityCell, phone);
+registration(identityCell, name, lastname, mail, phone);
 })
 
     return containerRegister;  
