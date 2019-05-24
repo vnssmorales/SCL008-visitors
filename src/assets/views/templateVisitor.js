@@ -1,11 +1,11 @@
 export const templateVisitor =()=>{
     const containerVisitor = document.createElement('div');
     const contenVisitor = `
-    <section>
+    <section id= "sectionenter">
         <h4>CONTACTO DE ENTRADA</h4>
         <input type="text" name="" placeholder="Nombre de la persona que te recibirá" id="contact">
     </section>
-    <div>
+    <div id="selector">
         <select name="oficinas" id="office">
             <option value="0">IF Blanco</option>
             <option value="1">AguasLab</option>
@@ -20,7 +20,7 @@ export const templateVisitor =()=>{
             <option value="10">ÑAM</option>
         </select>
     </div>
-<div>
+<div id= "mail_control">
     <input type="mail" placeholder="example@lab.com" class="form-control">
 </div>
 
