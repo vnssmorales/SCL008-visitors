@@ -5,6 +5,7 @@ export const templateHome =()=>{
     const contentHome = `
      <div class= "container id="visitorshome">
      <div class="row">
+     
      <div class="col-sm-12 col-md-12 col-lg-12" id="welcome">
     <h1>Bienvenido a Visitors...</h1>
     </div>
