@@ -1,3 +1,5 @@
+import {validateUserActive} from '../js/validate.js'
+import {userLogin} from '../js/login.js'
 export const templateLogin =()=>{
     const containerLogin = document.createElement('div');
     // creamos el contenido del login
@@ -26,8 +28,7 @@ export const templateLogin =()=>{
             document.getElementById('errorPassActive').innerHTML = `Por favor ingrese la contraseña`
         }
         if (validateUserActive(nameActive,passActive)) {
-            userActive(nameActive,passActive);
-            window.location.hash='#/wall';
+            userLogin(nameActive,passActive);
         }   
          
      })
