@@ -1,4 +1,4 @@
-
+ 
 export const registration = (name, lastname, mail, identityCell, phone) => {
     firebase.auth().createUserWithEmailAndPassword(mail, identityCell)
     .then(function(){
