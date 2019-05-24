@@ -2,46 +2,36 @@ import {registration} from '../js/checkIn.js'
 
 export const templateRegister =()=>{
     const containerRegister = document.createElement('div');
-    const contenRegister = `<section class="avatar">
+    const contenRegister = `
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12" id="photo">
-                <img src="../img/icon-Ewok.png" alt="icon-Ewok" class="rounded-circle">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div id="drop_zone">tu photo</div>
-                <input type="file" id="files" name="files[]" multiple />
-<output id="list"></output>
-                <button class="btn btn-outline-dark" id="photo">subirphoto</button>
-            </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="photo">
+            <div id="drop_zone"><h3>tu foto</h3></div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12" id="archivo">
+            <input type="file" id="files" name="files[]" multiple />
+           <output id="list"></output>
+           </div>
         </div>
     </div>
    
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-8 col-lg-12" id ="inputname">
-                <div class="input-group">
-                    <input type="text" id="nombre" placeholder="Nombre" class="form-control">
-                    <input type="text" id="apellido" placeholder="Apellido" class="form-control">
-                    <div class="col-sm-6 col-md-8 col-lg-12" id="inputrut">
-                    <h5>Ingresa tu cedula de identidad</h5>
-                        <input type="text" id="rut" placeholder="rut, sin puntos ni guion" class="form-control">
-                    </div>
-                    <div class="col-sm-6 col-md-8 col-lg-12" id= "inputmail">
-                    <h5>Ingresa tu correo electronico</h5>
-                        <input type="mail" id="correo" placeholder="example@lab.com" class="form-control"> 
-                    </div>
-                    <div class="col-sm-6 col-md-8 col-lg-12">
-                    <h5>Ingresa tu numero de celular</h5>
-                        <input type="number" id="fono" placeholder="+56 9123 45 678" class="form-control">
-                    </div>
-                </div>
-                <div>
-                <button class="btn btn-outline-dark" id="registry">Registro de visitas</button>
-                </div>
-                </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-12" id ="inputname">
+        <div class="form-group">
+            <input type="text" id="nombre" placeholder="Nombre">   
+            <input type="text" id="apellido" placeholder="Apellido">          
+            <input type="text" id="rut" placeholder="rut, sin puntos ni guion">
+            <input type="mail" id="correo" placeholder="example@lab.com"> 
+            <input type="number" id="fono" placeholder="+56 9123 45 678">
+         </div>
+         </div>
+            <div class="col-sm-6 col-md-8 col-lg-12" id ="btnregistry">
+            <div><button class="btn btn-outline-dark" id="registry">Registro de visitas</button> </div>
         </div>
     </div>
-    </section>
+</div>
+ 
    ` 
 
     containerRegister.innerHTML=contenRegister;

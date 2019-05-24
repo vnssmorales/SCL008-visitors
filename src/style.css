@@ -16,6 +16,14 @@
     color: #bbb;
     width: 200px;
     height: 200px;
+    text-align: center;
+    margin-left: 230px;
+    color: #000;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#drop_zone h3 {
+   margin-top: 70px;
 }
 
 .thumb {
@@ -32,19 +40,16 @@ body {
     background-image:url("img/Template1.png"); 
     min-height: 100vh;
     background-repeat: no-repeat;
+    
 }
 
-   
-   .avatar{
-    background-color: transparent; 
-    background-image:url("img/Template1.png");
-    background-position:center;/*centrar imagen*/
-   background-repeat: no-repeat;/*no repetir imagen*/
-   background-size: cover;/*especifica tamaño de la imagen*/
-   margin-top: 60px;
+#photo {
    text-align: center;
-   margin-bottom: 100px;
-   }
+   border-radius: 2px solid;
+   margin-top: 30px;
+   margin-bottom: 50px;
+
+}
 
 #welcome {
     text-align: center;
@@ -67,21 +72,41 @@ body {
     border-radius: 3px solid;
 }
 
-#home, #administrator{
+#home, #administrator #inputname{
     text-align: center;
 }
 
 #nombre, #apellido, #rut, #correo, #fono {
-    width: 250px;
-    padding: 20px;
+    width: 300px;
+    padding: 10px;
     margin: 20px;
+   border-radius: 5px; 
+   margin-left: 180px;  
 }
 
-#photo {
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-#inputname, #inputrut {
+#archivo {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+#registry {
+    margin: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 3px solid;
+    text-align: center;
+    height: 70px;
+}
+
+.form-control {
+    text-align: center;
+    width: 300px;
+    align-content: center;
+    align-items: center;
+}
+
+#btnregistry {
+    margin-left: 210px;
 }
